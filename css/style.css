@@ -1,0 +1,72 @@
+:root {
+  --color-primary: #caff33;
+  --color-heading: #fff;
+  --color-body-primary: #b3b3b3;
+  --color-body-secondary: #1c1c1c;
+  --color-border-primary: #262626;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: var(--color-body-primary);
+  font-family: "Lexend", sans-serif;
+  font-size: 1.8rem;
+  margin: 2rem;
+}
+
+/* Buttons */
+.btn {
+  background: transparent;
+  border-radius: 100px;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.8rem;
+}
+
+.btn--primary {
+  color: var(--color-body-secondary);
+  background-color: var(--color-primary);
+  padding: 18px 30px;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+/* Navigation */
+.nav {
+  background-color: var(--color-body-secondary);
+  border: 1px solid var(--color-border-primary);
+  color: #fff;
+  display: flex;
+  border-radius: 100px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 3.4rem;
+}
+
+.nav__logo {
+  display: flex;
+  gap: 4px;
+}
+
+.nav__links {
+  display: flex;
+  gap: 24px;
+}
+
+.nav .nav__btns {
+  display: flex;
+  gap: 3rem;
+}
