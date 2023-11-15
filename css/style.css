@@ -18,7 +18,19 @@ body {
   color: var(--color-body-primary);
   font-family: "Lexend", sans-serif;
   font-size: 1.8rem;
-  margin: 2rem;
+  padding: 4rem 1.6rem 3rem;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    padding: 3rem 8rem;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  body {
+    padding: 5rem 16.2rem;
+  }
 }
 
 /* Buttons */
