@@ -1,87 +1,121 @@
 :root {
-  --color-primary: #caff33;
-  --color-heading: #fff;
-  --color-body-primary: #b3b3b3;
-  --color-body-secondary: #1c1c1c;
-  --color-border-primary: #262626;
-  --color-bg-primary: #1a1a1a;
-  --color-bg-secondary: #1c1c1c;
+  --primary-color: #caff33;
+  --text-color: #b3b3b3;
+  --bg-color-primary: #1a1a1a;
+  --bg-color-secondary: #1c1c1c;
+  --border-color: #262626;
 }
 
 * {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: inherit;
+}
+
 html {
-  font-size: 62.5%;
+  font-size: 62.5%; /* 10px */
 }
 
 body {
-  color: var(--color-body-primary);
+  color: var(--text-color);
   font-family: "Lexend", sans-serif;
-  font-size: 1.8rem;
-  padding: 4rem 1.6rem 3rem;
-  background-color: var(--color-bg-primary);
+  font-size: 14px;
 }
 
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+}
 @media screen and (min-width: 1024px) {
   body {
-    padding: 3rem 8rem;
+    font-size: 18px;
   }
 }
 
-@media screen and (min-width: 1920px) {
-  body {
-    padding: 5rem 16.2rem;
+.txt-green {
+  color: var(--primary-color);
+}
+
+/* Headings */
+h1,
+h2,
+h3 {
+  color: #fff;
+}
+
+h1,
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  h1,
+  h2 {
+    font-size: 38px;
+  }
+
+  h3 {
+    font-size: 26px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  h1,
+  h2 {
+    font-size: 48px;
+  }
+
+  h3 {
+    font-size: 30px;
   }
 }
 
 /* Buttons */
 .btn {
   background: transparent;
-  border-radius: 100px;
   border: 0;
+  border-radius: 1000px;
   color: #fff;
-  cursor: pointer;
-  font-size: 1.8rem;
+  text-transform: capitalize;
 }
 
-.btn--primary {
-  color: var(--color-body-secondary);
-  background-color: var(--color-primary);
-  padding: 18px 30px;
+.btn-block {
+  width: 100%;
 }
 
-/* Links */
-a {
-  text-decoration: none;
-  color: inherit;
-  display: inline-block;
+.btn-big {
+  padding: 2.4rem;
 }
 
-/* Navigation */
-.nav {
-  background-color: var(--color-bg-secondary);
-  border: 1px solid var(--color-border-primary);
-  color: #fff;
-  display: flex;
-  border-radius: 100px;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2rem 3.4rem;
+.btn-sm {
+  padding: 1.8rem;
 }
 
-.nav__logo {
-  display: flex;
-  gap: 4px;
+.btn-primary {
+  background-color: var(--primary-color);
+  color: #000;
 }
 
-.nav__links {
-  display: flex;
-  gap: 24px;
+.btn-container {
+  background-color: var(--bg-color-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 1000px;
+  padding: 1.2rem;
+  white-space: nowrap;
 }
 
-.nav .nav__btns {
-  display: flex;
-  gap: 3rem;
+/* Icons */
+.fa-solid {
+  color: var(--primary-color);
 }
